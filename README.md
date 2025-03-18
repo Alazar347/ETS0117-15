@@ -9,3 +9,14 @@ print(uppercase_text)
 Output 
 
 HELLO, WORLD!
+
+lower() - Converts all characters in a string to lowercase
+
+Example 
+
+text = "Hello World"
+print(text.lower())
+
+Output 
+
+hello world
