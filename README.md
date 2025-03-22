@@ -63,3 +63,25 @@ Example
 
 text = "apple,banana,orange"
 print(text.split(","))  # Output: ['apple', 'banana', 'orange']
+
+join() - Joins elements of a list into a single string.
+
+Example 
+
+words = ['Hello', 'Python', 'World']
+print(" ".join(words))  # Output: Hello Python World
+
+find() - Returns the index of the first occurrence of a substring, or -1 if not found.
+
+Example 
+
+text = "Hello World"
+print(text.find("World"))  # Output: 6
+print(text.find("Python"))  # Output: -1
+
+count() - Counts occurrences of a substring in a string.
+
+Example
+
+text = "banana"
+print(text.count("a"))  # Output: 3
