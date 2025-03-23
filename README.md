@@ -85,3 +85,36 @@ Example
 
 text = "banana"
 print(text.count("a"))  # Output: 3
+
+capitalize()
+Converts the first character of a string to uppercase and the rest to lowercase.
+
+Example:
+
+text = "hello world"
+print(text.capitalize())  
+
+Output:
+Hello world
+
+title()
+Converts the first letter of each word to uppercase.
+
+Example:
+
+text = "hello world from python"
+print(text.title())  
+
+Output:
+Hello World From Python
+
+isalpha()
+Returns True if all characters in the string are alphabetic (letters only, no numbers or symbols), otherwise False.
+
+Example:
+
+text1 = "HelloWorld"
+text2 = "Hello123"
+
+print(text1.isalpha())  # Output: True
+print(text2.isalpha())  # Output: False
