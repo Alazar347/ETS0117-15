@@ -118,3 +118,32 @@ text2 = "Hello123"
 
 print(text1.isalpha())  # Output: True
 print(text2.isalpha())  # Output: False
+
+isdigit()
+Checks if all characters in the string are digits (0-9).
+
+Example 
+
+text1 = "12345"
+text2 = "123abc"
+
+print(text1.isdigit())  # Output: True
+print(text2.isdigit())  # Output: False
+
+
+swapcase()
+Swaps uppercase characters to lowercase and vice versa.
+
+Example 
+
+text = "Hello World"
+print(text.swapcase())  # Output: hELLO wORLD
+
+
+zfill(width)
+Pads the string with leading zeros until it reaches the specified width.
+
+Example 
+
+text = "42"
+print(text.zfill(5))  # Output: 00042
