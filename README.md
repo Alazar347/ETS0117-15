@@ -147,3 +147,48 @@ Example
 
 text = "42"
 print(text.zfill(5))  # Output: 00042
+
+partition()
+The partition() method splits a string into three parts:
+
+The part before the first occurrence of the specified separator.
+
+The separator itself.
+
+The part after the separator.
+
+Example:
+
+text = "hello world"
+print(text.partition(" "))  
+
+Output:
+
+python
+('hello', ' ', 'world')
+
+rjust()
+The rjust(width, fillchar) method right-aligns the string by padding it with a specified character (default is space) until it reaches the given width.
+
+Example 
+
+text = "42"
+print(text.rjust(5, "0"))  
+
+
+OutPut  
+
+'00042'
+
+casefold()
+The casefold() method is similar to lower(), but it is more aggressive in handling case conversion, making it useful for case-insensitive comparisons.
+
+Example 
+
+text1 = "Hello World"
+text2 = "hello world"
+
+print(text1.casefold() == text2.casefold())  # Output: True
+
+
+
