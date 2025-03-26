@@ -190,5 +190,33 @@ text2 = "hello world"
 
 print(text1.casefold() == text2.casefold())  # Output: True
 
+str.swapcase()
+Description
+Swaps uppercase to lowercase and vice versa.
+
+Example 
+
+text = "Hello World"
+print(text.swapcase())  # Output: "hELLO wORLD"
+
+str.lstrip()
+Description
+Removes leading spaces only.
+
+Example
+
+text = "  Hello World  "
+print(text.lstrip())  # Output: "Hello World  "
+
+str.rstrip()
+Description
+Removes trailing spaces only.
+
+Example
+
+text = "  Hello World  "
+print(text.rstrip())  # Output: "  Hello World"
+
+
 
 
