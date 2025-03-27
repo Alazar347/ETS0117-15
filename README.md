@@ -27,7 +27,7 @@ Same as find(), but raises an error if the substring is not found.
 text = "hello world"
 print(text.index("world")) # Output: 6
 
-# print(text.index("Python")) # Raises ValueError
+print(text.index("Python")) Raises ValueError
 
 str.startswith(substring)
 Checks if the string starts with the given substring.
@@ -149,10 +149,9 @@ text = "42"
 print(text.zfill(5))  # Output: 00042
 
 partition()
+
 The partition() method splits a string into three parts:
-
 The part before the first occurrence of the specified separator.
-
 The separator itself.
 
 The part after the separator.
@@ -163,8 +162,6 @@ text = "hello world"
 print(text.partition(" "))  
 
 Output:
-
-python
 ('hello', ' ', 'world')
 
 rjust()
@@ -176,9 +173,7 @@ text = "42"
 print(text.rjust(5, "0"))  
 
 
-OutPut  
-
-'00042'
+OutPut: '00042'
 
 casefold()
 The casefold() method is similar to lower(), but it is more aggressive in handling case conversion, making it useful for case-insensitive comparisons.
