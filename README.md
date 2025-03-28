@@ -212,6 +212,37 @@ Example
 text = "  Hello World  "
 print(text.rstrip())  # Output: "  Hello World"
 
+isupper()
+Description
+The isupper() method checks whether all the characters in a string are uppercase. It returns True if all characters are uppercase and there is at least one alphabetic character; otherwise, it returns False.
+
+Return Value
+Returns True if all alphabetic characters in the string are uppercase.
+Returns False if the string contains lowercase letters or no alphabetic characters.
+
+islower()
+Description
+The islower() method checks whether all the characters in a string are lowercase. It returns True if all characters are lowercase and there is at least one alphabetic character; otherwise, it returns False.
+
+Return Value
+Returns True if all alphabetic characters in the string are lowercase.
+Returns False if the string contains uppercase letters or no alphabetic characters.
 
 
+encode()
+Description
+The encode() method encodes a string using the specified encoding format. By default, it uses 'utf-8'.
 
+Parameters
+encoding (optional): The encoding format (e.g., 'utf-8', 'ascii', 'latin-1', etc.). Default is 'utf-8'.
+
+errors (optional): Specifies how to handle encoding errors. Possible values:
+
+'strict' (default): Raises an error for encoding failures.
+
+'ignore': Ignores characters that cannot be encoded.
+
+'replace': Replaces unencodable characters with a replacement character.
+
+Return Value
+Returns a bytes object representing the encoded version of the string.
