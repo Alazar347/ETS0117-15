@@ -246,3 +246,47 @@ errors (optional): Specifies how to handle encoding errors. Possible values:
 
 Return Value
 Returns a bytes object representing the encoded version of the string.
+
+len() Function
+
+The len() function in Python returns the number of characters in a string.
+
+Syntax:
+len(string)
+
+Example:
+text = "Hello, World!"
+length = len(text)
+print(length)  # Output: 13
+
+Strings (Formatted String Literals)
+
+Introduced in Python 3.6, f-strings provide an efficient and readable way to format strings using expressions inside curly braces {}.
+
+Syntax:
+
+f"string {expression}"
+
+Example:
+
+name = "Alice"
+age = 25
+message = f"My name is {name} and I am {age} years old."
+print(message)  # Output: My name is Alice and I am 25 years old.
+
+format() Method
+
+The format() method allows formatting strings using placeholders {}.
+
+Syntax:
+
+"string {}".format(value)
+
+Example:
+
+name = "Bob"
+age = 30
+message = "My name is {} and I am {} years old.".format(name, age)
+print(message)  # Output: My name is Bob and I am 30 years old.
+
+
