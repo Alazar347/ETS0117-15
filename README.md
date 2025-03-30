@@ -27,7 +27,7 @@ Same as find(), but raises an error if the substring is not found.
 text = "hello world"
 print(text.index("world")) # Output: 6
 
-print(text.index("Python")) Raises ValueError
+print(text.index("Python")) # Raises ValueError
 
 str.startswith(substring)
 Checks if the string starts with the given substring.
@@ -289,4 +289,72 @@ age = 30
 message = "My name is {} and I am {} years old.".format(name, age)
 print(message)  # Output: My name is Bob and I am 30 years old.
 
+isspace() Method
 
+Description:
+
+The isspace() method in Python is used to check whether all the characters in a given string are whitespace characters. It returns True if the string consists only of whitespace characters (spaces, tabs, newlines, etc.), and False otherwise.
+
+Syntax:
+
+string.isspace()
+
+Return Value:
+
+   - Returns True if the string contains only whitespace characters.
+   - Returns False otherwise.
+
+Example: 
+
+  # Example 1: String with spaces
+s1 = "   "
+print(s1.isspace())  # Output: True
+
+# Example 2: String with tab and newline
+s2 = "\t\n"
+print(s2.isspace())  # Output: True
+
+# Example 3: String with non-whitespace characters
+s3 = "hello world"
+print(s3.isspace())  # Output: False
+
+# Example 4: Empty string
+s4 = ""
+print(s4.isspace())  # Output: False
+
+isalnum() Method
+
+Description:
+
+The isalnum() method checks if a string consists only of alphanumeric characters (letters and numbers) and contains at least one character. If all characters in the string are either alphabetic (a-z, A-Z) or digits (0-9), it returns True; otherwise, it returns False.
+
+Syntax:
+
+string.isalnum()
+
+Return Value:
+
+   - Returns True if all characters in the string are alphanumeric.
+   - Returns False if the string contains special characters, spaces, or is empty.
+
+Example: 
+
+ # Example 1: String with letters and numbers
+s1 = "Python123"
+print(s1.isalnum())  # Output: True
+
+# Example 2: String with only letters
+s2 = "Python"
+print(s2.isalnum())  # Output: True
+
+# Example 3: String with special characters
+s3 = "Python@123"
+print(s3.isalnum())  # Output: False
+
+# Example 4: String with spaces
+s4 = "Python 123"
+print(s4.isalnum())  # Output: False
+
+# Example 5: Empty string
+s5 = ""
+print(s5.isalnum())  # Output: False
