@@ -63,7 +63,77 @@ copy_list.append(4)
 print(original)  # Output: [1, 2, 3]
 print(copy_list)  # Output: [1, 2, 3, 4]
 
+ # count()
 
+Description
+The count() method returns the number of occurrences of a specified element in the list.
+
+Syntax:
+list.count(element)
+
+Parameters
+
+   - element: The value whose occurrences need to be counted in the list.
+
+Return Value
+
+  - Returns an integer representing the number of times the specified element appears in the list.
+
+  Example
+  numbers = [1, 2, 3, 4, 2, 2, 5]
+  print(numbers.count(2))  # Output: 3
+
+# index()
+
+Description
+
+The index() method returns the first occurrence index of a specified element in the list.
+
+Syntax:
+list.index(element, start, end)
+
+Parameters
+
+  - element: The value to be searched in the list.
+
+  - start (optional): The starting index from where to begin the search.
+
+  - end (optional): The ending index where the search stops.
+
+Return Value
+
+  - Returns the index (zero-based) of the first occurrence of the specified element.
+
+  - Raises a ValueError if the element is not found.
+
+Example
+
+fruits = ['apple', 'banana', 'cherry', 'banana']
+print(fruits.index('banana'))  # Output: 1
+
+# extend()
+
+Description
+
+The extend() method appends elements from an iterable (such as another list, tuple, or set) to the end of the current list.
+
+Syntax
+list.extend(iterable)
+
+Parameters
+
+  - iterable: A collection (list, tuple, set, etc.) whose elements will be added to the end of the list.
+
+Return Value
+
+ - Modifies the original list in place and returns None.
+
+Example: 
+
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+list1.extend(list2)
+print(list1)  # Output: [1, 2, 3, 4, 5, 6]
 
 
 
