@@ -135,6 +135,62 @@ list2 = [4, 5, 6]
 list1.extend(list2)
 print(list1)  # Output: [1, 2, 3, 4, 5, 6]
 
+# insert() Method
 
+Description:
 
+The insert() method inserts an element at a specified index in a list.
 
+Syntax:
+list.insert(index, element)
+
+Parameters:
+
+    - index: The position where the element should be inserted.
+
+    - element: The value to insert into the list.
+
+Example: 
+
+numbers = [1, 2, 4, 5]
+numbers.insert(2, 3)  # Insert 3 at index 2
+print(numbers)  # Output: [1, 2, 3, 4, 5]
+
+# pop() Method
+
+Description:
+
+The pop() method removes and returns an element from a specified index. If no index is given, it removes and returns the last element.
+
+Syntax:
+element = list.pop(index)
+
+Parameters:
+
+  -index (optional): The position of the element to remove. If omitted, the last element is removed.
+
+Example:
+
+fruits = ['apple', 'banana', 'cherry']
+removed_item = fruits.pop(1)  # Remove element at index 1
+print(fruits)  # Output: ['apple', 'cherry']
+print(removed_item)  # Output: 'banana'
+
+# remove() Method
+
+Description:
+
+The remove() method removes the first occurrence of a specified value from the list.
+
+Syntax:
+list.remove(element)
+
+Parameters:
+
+  - element: The value to remove from the list. If the value is not found, a ValueError is raised.
+
+Example:
+
+colors = ['red', 'green', 'blue', 'green']
+colors.remove('green')  # Removes the first occurrence of 'green'
+print(colors)  # Output: ['red', 'blue', 'green']
