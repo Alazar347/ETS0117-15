@@ -194,3 +194,76 @@ Example:
 colors = ['red', 'green', 'blue', 'green']
 colors.remove('green')  # Removes the first occurrence of 'green'
 print(colors)  # Output: ['red', 'blue', 'green']
+
+# reverse()
+
+Description
+
+The reverse() method reverses the order of elements in a list in place. It does not return a new list but modifies the existing one.
+
+Syntax
+list.reverse()
+
+Parameters
+
+ -None
+
+Return Value
+
+ -This method does not return anything (None).
+
+Example:
+numbers = [1, 2, 3, 4, 5]
+numbers.reverse()
+print(numbers)  # Output: [5, 4, 3, 2, 1]
+
+# sort()
+
+Description
+
+The sort() method sorts the elements of a list in ascending order by default. It modifies the list in place.
+
+Syntax
+list.sort(key=None, reverse=False)
+
+Parameters
+
+ -key (Optional): A function to specify the sorting criteria.
+
+ -reverse (Optional): If True, sorts in descending order; default is False (ascending order).
+
+Return Value
+
+ -This method does not return anything (None).
+
+Example:
+numbers = [5, 2, 8, 1, 3]
+numbers.sort()
+print(numbers)  # Output: [1, 2, 3, 5, 8]
+
+ # del
+
+Description
+
+The del statement in Python is used to delete elements from a list by index or remove an entire list from memory.
+
+Syntax
+
+del list[index]  # Removes the element at the specified index
+del list[start:end]  # Removes a slice of elements from start to end
+del list  # Deletes the entire list
+
+Parameters
+
+index (Required): The index of the element to delete.
+
+start:end (Optional): A range specifying multiple elements to delete.
+
+Return Value
+
+The del statement does not return anything (None).
+
+Example:
+numbers = [10, 20, 30, 40, 50]
+del numbers[2]
+print(numbers)  # Output: [10, 20, 40, 50]
