@@ -62,3 +62,53 @@ keys = ["name", "age", "city"]
 new_dict = dict.fromkeys(keys, "Unknown")
 print(new_dict)  
 Output: {'name': 'Unknown', 'age': 'Unknown', 'city': 'Unknown'}
+
+# get(key[, default])
+Description:
+Returns the value for the specified key. If the key is not found, it returns the optional default value instead of raising an error.
+
+Syntax:
+dict.get(key, default)
+
+Parameters:
+
+ -key: The key to search for.
+
+default (optional): Value to return if the key is not found. Defaults to None.
+
+Example:
+person = {'name': 'Alazar', 'age': 21}
+print(person.get('name'))        # Output: Alazar
+print(person.get('gender'))      # Output: None
+print(person.get('gender', 'N/A'))  # Output: N/A
+
+# items()
+Description:
+Returns a view object that displays a list of dictionary’s key-value tuple pairs.
+
+Syntax:
+dict.items()
+
+Example:
+person = {'name': 'Alazar', 'age': 21}
+for key, value in person.items():
+    print(key, value)
+Output:
+name Alazar
+age 21
+
+# keys()
+Description:
+Returns a view object that displays a list of all the keys in the dictionary.
+
+Syntax:
+dict.keys()
+
+Example:
+
+person = {'name': 'Alazar', 'age': 21}
+print(person.keys()) 
+Output: dict_keys(['name', 'age'])
+
+You can convert it to a list if needed
+print(list(person.keys()))  # Output: ['name', 'age']
