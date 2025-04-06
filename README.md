@@ -98,6 +98,7 @@ name Alazar
 age 21
 
 # keys()
+
 Description:
 Returns a view object that displays a list of all the keys in the dictionary.
 
@@ -112,3 +113,63 @@ Output: dict_keys(['name', 'age'])
 
 You can convert it to a list if needed
 print(list(person.keys()))  # Output: ['name', 'age']
+
+# pop()
+
+Syntax:
+dict.pop(key[, default])
+
+Parameters:
+
+  -key (required): The key of the item to remove.
+
+  -default (optional): The value to return if the key is not found. If not provided and the key doesn't exist, a KeyError is raised.
+
+ Returns:
+
+  -The value associated with the specified key, or the default value if provided.
+
+Example:
+
+person = {"name": "Alice", "age": 25}
+age = person.pop("age")          # Returns 25, removes "age"
+missing = person.pop("city", "Unknown")  # Returns "Unknown"
+
+# popitem()
+
+Syntax:
+dict.popitem()
+
+Parameters:
+ -None
+
+Returns:
+
+ -A tuple (key, value) of the last inserted item.
+
+ -Raises KeyError if the dictionary is empty.
+
+Example:
+
+person = {"name": "Alice", "age": 25}
+last_item = person.popitem()  # Returns ('age', 25)
+
+# setdefault()
+
+Syntax:
+dict.setdefault(key[, default])
+
+Parameters:
+
+ -key (required): The key to search for.
+ -default (optional): The value to set if the key is not found. Defaults to None.
+
+Returns:
+
+ -The value of the existing key, or the default value if the key is inserted.
+
+Example:
+
+person = {"name": "Alice"}
+age = person.setdefault("age", 30)  # Returns 30, adds "age": 30
+existing = person.setdefault("name", "Bob")  # Returns "Alice"
