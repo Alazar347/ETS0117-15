@@ -173,3 +173,46 @@ Example:
 person = {"name": "Alice"}
 age = person.setdefault("age", 30)  # Returns 30, adds "age": 30
 existing = person.setdefault("name", "Bob")  # Returns "Alice"
+
+# update()
+Description:
+Updates the dictionary with key-value pairs from another dictionary or iterable of key-value pairs. If a key already exists, its value is updated.
+
+Syntax:
+
+dict.update([other])
+Parameters:
+
+other (optional): Either another dictionary object or an iterable of key-value pairs (like a list of tuples).
+
+Returns:
+
+None. The dictionary is updated in place.
+
+Example:
+
+a = {'x': 1, 'y': 2}
+b = {'y': 3, 'z': 4}
+a.update(b)
+print(a)  # Output: {'x': 1, 'y': 3, 'z': 4}
+
+# values()
+Description:
+Returns a view object that displays a list of all the values in the dictionary.
+
+Syntax:
+
+dict.values()
+Parameters:
+
+None
+
+Returns:
+
+A view object containing the dictionary’s values.
+
+Example:
+
+a = {'x': 1, 'y': 2, 'z': 3}
+vals = a.values()
+print(vals)  # Output: dict_values([1, 2, 3])
