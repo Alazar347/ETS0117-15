@@ -102,3 +102,59 @@ print(a)  # Output: {1, 3}
 
 a.discard(5)  # No error, does nothing
 ```
+
+# 7. clear()
+
+Description:
+Removes all elements from a set, leaving it empty.
+
+Syntax:
+```Python
+set.clear()
+```
+
+Example:
+```Python
+fruits = {"apple", "banana", "cherry"}
+fruits.clear()
+print(fruits)  # Output: set()
+```
+# 8.copy()
+
+Description:
+Returns a shallow copy of the set. The original set remains unchanged.
+
+Syntax:
+```Python
+new_set = set.copy()
+```
+Example:
+```Python
+colors = {"red", "green", "blue"}
+colors_copy = colors.copy()
+print(colors_copy)  # Output: {'red', 'green', 'blue'}
+```
+# 9. isdisjoint()
+
+Description:
+Checks whether two sets have no elements in common.
+
+Returns:
+True if the sets are disjoint (no common elements).
+False otherwise.
+
+Syntax:
+
+```Python
+set1.isdisjoint(set2)
+```
+Example:
+
+```Python
+a = {1, 2, 3}
+b = {4, 5, 6}
+c = {3, 4, 5}
+
+print(a.isdisjoint(b))  # Output: True
+print(a.isdisjoint(c))  # Output: False
+```
