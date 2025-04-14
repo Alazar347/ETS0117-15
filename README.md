@@ -158,3 +158,67 @@ c = {3, 4, 5}
 print(a.isdisjoint(b))  # Output: True
 print(a.isdisjoint(c))  # Output: False
 ```
+
+# 10.difference_update()
+
+Description:
+Removes all elements of another set (or iterable) from the current set.
+
+ Syntax:
+```Python
+set1.difference_update(set2)
+```
+This updates set1 by removing all elements that are also in set2.
+
+Example:
+```Python
+a = {1, 2, 3, 4, 5}
+b = {3, 4, 6}
+a.difference_update(b)
+print(a)  # Output: {1, 2, 5}
+```
+Note:
+It modifies the original set.
+It’s equivalent to: a = a - b, but it doesn’t return a new set.
+
+# 11.intersection_update()
+
+Description:
+Updates the current set, keeping only elements found in both sets.
+
+Syntax:
+```Python
+set1.intersection_update(set2)
+```
+Example:
+```Python
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+a.intersection_update(b)
+print(a)  # Output: {3, 4}
+```
+Note:
+It’s an in-place operation (modifies a).
+Equivalent to: a = a & b, but again, no new set is returned.
+
+# 12.issubset()
+
+Description:
+Checks if all elements of the current set are in another set.
+
+📖Syntax:
+```Python
+set1.issubset(set2)
+```
+Returns True if every element in set1 is in set2, otherwise False.
+
+Example:
+```Python
+a = {1, 2}
+b = {1, 2, 3, 4}
+print(a.issubset(b))  # Output: True
+```
+Note:
+This does not modify any set.
+You can also use the <= operator: a <= b.
+
