@@ -222,3 +222,61 @@ Note:
 This does not modify any set.
 You can also use the <= operator: a <= b.
 
+# 13.issuperset() Method
+Description:
+The issuperset() method checks if the calling set contains all elements of another set.
+It returns True if it does, otherwise False.
+
+Syntax:
+```Python
+A.issuperset(B)
+```
+A is the calling set.
+Returns True if every element of B is in A.
+
+ Example:
+```Python
+A = {1, 2, 3, 4, 5}
+B = {2, 3}
+
+print(A.issuperset(B))  # Output: True
+print(B.issuperset(A))  # Output: False
+```
+# 14.pop() Method
+ Description:
+Removes and returns an arbitrary element from the set.
+Since sets are unordered, you can't predict which element will be removed.
+
+Raises a KeyError if the set is empty.
+
+ Syntax:
+```Python
+set.pop()
+```
+ Example:
+```Python
+colors = {'red', 'blue', 'green'}
+removed = colors.pop()
+
+print("Removed:", removed)
+print("Remaining set:", colors)
+```
+# 15.remove() Method
+ Description:
+Removes a specific element from the set.
+
+If the element is not found, it raises a KeyError.
+
+ Syntax:
+```Python
+set.remove(element)
+```
+ Example:
+```Python
+fruits = {'apple', 'banana', 'cherry'}
+fruits.remove('banana')
+
+print(fruits)  # Output: {'apple', 'cherry'}
+
+ fruits.remove('orange')  # Would raise KeyError
+ ```
