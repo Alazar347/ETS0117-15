@@ -280,3 +280,47 @@ print(fruits)  # Output: {'apple', 'cherry'}
 
  fruits.remove('orange')  # Would raise KeyError
  ```
+
+# 16.set.update()
+
+Description:
+The update() method adds elements from another iterable (like a set, list, or tuple) into the original set. It performs a union, adding all elements from the other set(s) that are not already present in the original.
+
+Syntax:
+```Python
+set1.update(iterable)
+```
+Behavior:
+
+Modifies set1 in place.
+Adds all unique elements from the iterable.
+Keeps existing elements intact.
+
+Example:
+```Python
+a = {1, 2, 3}
+b = {3, 4, 5}
+a.update(b)
+print(a)  # Output: {1, 2, 3, 4, 5}
+```
+#  17 set.symmetric_difference_update()
+Description:
+The symmetric_difference_update() method updates the set by keeping only elements that are not common between the set and the given iterable. In other words, it performs a symmetric difference, removing shared elements and adding only the different ones.
+
+Syntax:
+```Python
+set1.symmetric_difference_update(iterable)
+```
+Behavior:
+
+Modifies set1 in place.
+Removes elements present in both sets.
+Adds elements unique to the other set.
+
+Example:
+```Python
+a = {1, 2, 3}
+b = {3, 4, 5}
+a.symmetric_difference_update(b)
+print(a)  # Output: {1, 2, 4, 5}
+```
