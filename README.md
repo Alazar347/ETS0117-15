@@ -206,7 +206,7 @@ Equivalent to: a = a & b, but again, no new set is returned.
 Description:
 Checks if all elements of the current set are in another set.
 
-📖Syntax:
+Syntax:
 ```Python
 set1.issubset(set2)
 ```
